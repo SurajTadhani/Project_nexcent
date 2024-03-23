@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@media(max-width: 768px){
+  .sub-section{
+    width: 100%;
+    /* background-color: red; */
+  }
+}
+@media(min-width: 768px){
+  .sub-section{
+    width: 50%;
+    /* background-color: blue; */
+  }
+}
+
+
