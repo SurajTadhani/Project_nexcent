@@ -10,26 +10,24 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
     <link
       rel="stylesheet"
-      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="./js/index.js"></script>
-    <link rel="stylesheet" href="./node_modules/aos/dist/aos.css" />
 
     <style>
       html,
       body {
         width: 100%;
-        
       }
     </style>
   </head>
-  <body class="container">
+  <body class="">
     <!-- HEADER START -->
 
-    <header class="">
+    <header class="container">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <div>
@@ -220,10 +218,10 @@
     <!-- service-3 section start -->
     <section class="bg-body-tertiary">
       <div
-        class="container flex-md-row flex-lg-row flex-column d-flex justify-content-evenly align-content-center py-5 my-5 px-2"
+        class="container flex-md-row flex-lg-row flex-column d-flex justify-content-between align-items-center py-5 my-5 px-2"
       >
-        <div data-aos="fade-right">
-          <article class="w-md-50">
+        <div data-aos="fade-right" class="align-items-center">
+          <article class="">
             <h1>
               Helping a local <br />
               <span class="text-success">business reinvent itself</span>
@@ -233,47 +231,39 @@
             </p>
           </article>
         </div>
-        <div class="w-md-50">
-          <div
-            class="d-flex justify-content-evenly align-item-center flex-wrap py-2"
-          >
-            <div class="d-flex pe-md-5 pe-sm-4" data-aos="zoom-in">
-              <img src="/stats/icon1.svg" alt="" />
-              <article>
-                <h1 class="fw-bold text-secondary">2,245,341</h1>
-                <p class="text-secondary">Members</p>
-              </article>
-            </div>
-            <div class="d-flex" data-aos="zoom-in">
-              <img
-                class="pb-0"
-                style="height: 48px; width: 48px"
-                src="/stats/icon2.svg"
-                alt=""
-              />
-              <article>
-                <h1 class="fw-bold text-secondary">46,328</h1>
-                <p class="text-secondary">Clubs</p>
-              </article>
-            </div>
+        <div class="sub-section row row-cols-md-2 row-cols-1 gap-md-0 gap-3">
+          <div class="d-flex gap-2" data-aos="zoom-in">
+            <img src="/stats/icon1.svg" alt="" />
+            <article>
+              <h1 class="fw-bold text-secondary">2,245,341</h1>
+              <p class="text-secondary">Members</p>
+            </article>
           </div>
-          <div
-            class="d-flex justify-content-evenly align-item-center flex-wrap py-2"
-          >
-            <div class="d-flex pe-md-5 pe-sm-4" data-aos="zoom-in">
-              <img src="/stats/icon3.svg" alt="" />
-              <article>
-                <h1 class="fw-bold text-secondary">828,267</h1>
-                <p class="text-secondary">Event Bookings</p>
-              </article>
-            </div>
-            <div class="d-flex" data-aos="zoom-in">
-              <img src="/stats/icon4.svg" alt="" />
-              <article>
-                <h1 class="fw-bold text-secondary">1,926,436</h1>
-                <p class="text-secondary">Payments</p>
-              </article>
-            </div>
+          <div class="d-flex" data-aos="zoom-in">
+            <img
+              class="pb-0"
+              style="height: 48px; width: 48px"
+              src="/stats/icon2.svg"
+              alt=""
+            />
+            <article>
+              <h1 class="fw-bold text-secondary">46,328</h1>
+              <p class="text-secondary">Clubs</p>
+            </article>
+          </div>
+          <div class="d-flex" data-aos="zoom-in">
+            <img src="/stats/icon3.svg" alt="" />
+            <article>
+              <h1 class="fw-bold text-secondary">828,267</h1>
+              <p class="text-secondary">Event Bookings</p>
+            </article>
+          </div>
+          <div class="d-flex" data-aos="zoom-in">
+            <img src="/stats/icon4.svg" alt="" />
+            <article>
+              <h1 class="fw-bold text-secondary">1,926,436</h1>
+              <p class="text-secondary">Payments</p>
+            </article>
           </div>
         </div>
       </div>
@@ -347,14 +337,52 @@
             <h5 class="text-success">Tim Smith</h5>
             <p>British Dragon Boat Racing Association</p>
           </article>
-          <div class="d-flex justify-content-between flex-wrap">
-            <img src="/clients/client1.svg" alt="" />
-            <img src="/clients/client2.svg" alt="" />
-            <img src="/clients/client3.svg" alt="" />
-            <img src="/clients/client4.svg" alt="" />
-            <img src="/clients/client5.svg" alt="" />
-            <img src="/clients/client6.svg" alt="" />
-            <img src="/clients/client7.svg" alt="" />
+          <div
+            class="d-flex justify-content-between flex-column flex-sm-row align-items-lg-center align-items-start"
+          >
+            <img
+              width="48"
+              height="48"
+              class="img-fluid"
+              src="/clients/client1.svg"
+              alt=""
+            />
+            <img
+              width="48"
+              height="48"
+              class="img-fluid"
+              src="/clients/client2.svg"
+              alt=""
+            />
+            <img
+              width="48"
+              height="48"
+              class="img-fluid"
+              src="/clients/client3.svg"
+              alt=""
+            />
+            <img
+              width="48"
+              height="48"
+              class="img-fluid"
+              src="/clients/client4.svg"
+              alt=""
+            />
+            <img
+              width="48"
+              height="48"
+              class="img-fluid"
+              src="/clients/client5.svg"
+              alt=""
+            />
+            <img
+              width="48"
+              height="48"
+              class="img-fluid"
+              src="/clients/client6.svg"
+              alt=""
+            />
+            <img width="48" height="48" src="/clients/client7.svg" alt="" />
             <h6 class="fw-bold text-success fs-4">Meet All Customers -></h6>
           </div>
         </div>
@@ -479,7 +507,7 @@
             <p>All rights reserved</p>
           </article>
 
-          <div class="container py-3">
+          <div class="container py-3 px-0">
             <i class="fa-brands rounded-5 bg-white fa-instagram px-3 fa-2x"></i>
             <i class="fa-brands rounded-5 bg-white fa-facebook px-3 fa-2x"></i>
             <i class="fa-brands rounded-5 bg-white fa-twitter px-3 fa-2x"></i>
@@ -487,8 +515,11 @@
           </div>
         </div>
         <div class="container w-md-50 px-5 py-4">
-          <div class="row text-white flex-wrap" data-aos="fade-up">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6 py-3">
+          <div
+            class="d-flex text-white flex-column flex-lg-row flex-md-row"
+            data-aos="fade-up"
+          >
+            <div class="container py-4">
               <h2>Company</h2>
               <p>About Us</p>
               <p>Blog</p>
@@ -496,7 +527,7 @@
               <p>Pricing</p>
               <p>Testimonials</p>
             </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6 py-3">
+            <div class="container py-4">
               <h2>Support</h2>
               <p>Help Center</p>
               <p>Terms of service</p>
@@ -504,7 +535,7 @@
               <p>Privacy policy</p>
               <p>Status</p>
             </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6 py-3">
+            <div class="container py-4">
               <h5 class="text-secondary">Stay up to date</h5>
               <input
                 class="rounded-2"
@@ -517,5 +548,7 @@
       </div>
     </footer>
     <!-- footer end -->
+    
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>
