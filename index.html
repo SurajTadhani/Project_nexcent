@@ -1,294 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nexcent</title>
-    <link rel="icon" type="image/svg" href="/logo_icon/logo_icon.svg" />
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-
+    <title>Nexcent tailwind css</title>
     <style>
       html,
       body {
         width: 100%;
+        overflow-x: hidden;
       }
     </style>
   </head>
-  <body class="">
-    <!-- HEADER START -->
-
-    <header class="container">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <div>
-            <img src="/logo/logo.svg" alt="" />
-            <a class="navbar-brand fw-bold fs-2" href="#">Nexcent</a>
-          </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse fw-normal"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav mx-auto text-center mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Service</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Feature</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Product</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Testimonial</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">FAQ</a>
-              </li>
-            </ul>
-            <div class="text-end">
-              <button class="btn btn-outline-success">login</button>
-              <button class="btn btn-success">Signup</button>
-            </div>
-          </div>
+  <body>
+    <!-- Navbar start -->
+    <section class="container">
+      <div class="flex justify-between items-center py-3">
+        <div class="flex">
+          <img
+            class="px-3"
+            src="https://project-nexcent.vercel.app/logo.svg"
+            alt=""
+          />
+          <h1 class="text-[#343a40] text-3xl font-bold">Nexcent</h1>
         </div>
-      </nav>
-    </header>
-    <!-- HEADER ENDS -->
+        <div class="hidden lg:block">
+          <ul class="flex space-x-5">
+            <li class="active:text-slate-950">Home</li>
+            <li class="text-slate-700">Service</li>
+            <li class="text-slate-700">Feature</li>
+            <li class="text-slate-700">Product</li>
+            <li class="text-slate-700">Testimonial</li>
+            <li class="text-slate-700">FAQ</li>
+          </ul>
+        </div>
+        <div class="hidden lg:block">
+          <button
+            class="px-3 border-2 rounded-md py-1 bg-white text-[#198754] border-green-600 hover:bg-green-600 hover:text-black"
+          >
+            login
+          </button>
+          <button
+            class="px-3 border-2 rounded-md py-1 bg-green-500 text-white hover:bg-[#4caf4f]"
+          >
+            Signup
+          </button>
+        </div>
+        <div class="block md:hidden">
+          <i class="text-lg fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </section>
+    <!-- Navbar end -->
 
-    <!-- HERO SECTION START -->
-    <section style="background-color: #f5f7fa" class="bg-body-tertiary">
+    <!-- Hero Section Start -->
+    <section class="bg-slate-100">
       <div
-        class="d-flex justify-content-between align-items-center flex-md-row flex-column py-5 px-5 flex-lg-row container"
+        class="container py-6 flex justify-evenly items-center md:flex-row flex-col"
       >
-        <article data-aos="fade-right">
-          <h1 class="text-gray-900 fw-semibold">
-            Lessons and insights <br />
-            <span class="text-success">from 8 years</span>
+        <article class="space-y-6 max-w-xl antialiased">
+          <h1 class="text-heading font-bold md:text-5xl sm:text-3xl text-xl">
+            Lessons and insights <span class="text-primary">from 8 years</span>
           </h1>
-          <p class="text-secondary">
+          <p class="text-paragraph text-sm">
             Where to grow your business as a photographer: site or social media?
           </p>
-          <button class="btn btn-success text-white mt-4 btn-lg">
+          <button
+            class="mt-10 py-3 px-4 bg-primary font-semibold text-white cursor-pointer hover:bg-green-600 rounded-md"
+          >
             Register
           </button>
         </article>
-
-        <img src="/hero/HeroImg.svg" alt="" data-aos="fade-left" />
+        <img src="https://project-nexcent.vercel.app/HeroImg.svg" alt="hero" />
       </div>
     </section>
-    <!-- HERO SECTION END -->
+    <!-- Hero Section end -->
 
-    <!-- /Client section start -->
-    <section class="py-3">
-      <article class="text-center container" data-aos="fade-down">
-        <h1 class="fw-bold">Our Clients</h1>
-        <p class="text-secondary">
+    <!-- Our Clients section start -->
+    <section class="my-10 py-10">
+      <article class="text-center">
+        <h1 class="text-heading text-4xl font-semibold">Our Clients</h1>
+        <p class="text-paragraph">
           We have been working with some Fortune 500+ clients
         </p>
       </article>
       <div
-        class="d-flex justify-content-between container my-5 flex-wrap"
-        data-aos="zoom-in-up"
+        class="container flex sm:flex-row items-center flex-col justify-between py-12 *:size-12"
       >
-        <img class="img-fluid" src="/clients/client1.svg" alt="sorry" />
-        <img class="img-fluid" src="/clients/client2.svg" alt="sorry" />
-        <img class="img-fluid" src="/clients/client3.svg" alt="sorry" />
-        <img class="img-fluid" src="/clients/client4.svg" alt="sorry" />
-        <img class="img-fluid" src="/clients/client5.svg" alt="sorry" />
-        <img class="img-fluid" src="/clients/client6.svg" alt="sorry" />
-        <img class="img-fluid" src="/clients/client7.svg" alt="sorry" />
+        <img
+          src="https://project-nexcent.vercel.app/Clients/client1.svg"
+          alt=""
+        />
+        <img
+          src="https://project-nexcent.vercel.app/Clients/client2.svg"
+          alt=""
+        />
+        <img
+          src="https://project-nexcent.vercel.app/Clients/client3.svg"
+          alt=""
+        />
+        <img
+          src="https://project-nexcent.vercel.app/Clients/client4.svg"
+          alt=""
+        />
+        <img
+          src="https://project-nexcent.vercel.app/Clients/client5.svg"
+          alt=""
+        />
+        <img
+          src="https://project-nexcent.vercel.app/Clients/client6.svg"
+          alt=""
+        />
+        <img
+          src="https://project-nexcent.vercel.app/Clients/client7.svg"
+          alt=""
+        />
       </div>
-
-      <div class="container mt-5">
-        <article class="text-center lh-lg" data-aos="fade-up">
-          <h1 class="fs-1 lh-base fw-bold">
-            Manage your entire community <br />
-            in a single system
+      <div class="text-center space-y-5">
+        <h1 class="max-w-max mx-auto text-heading text-4xl font-bold">
+          Manage your entire community <br />
+          in a single system
+        </h1>
+        <p class="text-paragraph">Who is Nextcent suitable for?</p>
+      </div>
+      <div class="flex gap-3 px-10 text-center my-10 md:flex-row flex-col">
+        <div class="space-y-3">
+          <div class="flex justify-center items-center">
+            <img
+              class="bg-center"
+              src="https://project-nexcent.vercel.app/Features/icon1.svg"
+              alt=""
+            />
+          </div>
+          <h1 class="text-heading text-4xl font-bold">
+            Membership Organisations
           </h1>
-          <p class="text-secondary">Who is Nextcent suitable for?</p>
-        </article>
+          <p class="text-paragraph">
+            Our membership management software provides full automation of
+            membership renewals and payments.
+          </p>
+        </div>
+        <div class="space-y-3">
+          <div class="flex justify-center items-center">
+            <img
+              src="https://project-nexcent.vercel.app/Features/icon2.svg"
+              alt=""
+            />
+          </div>
+          <h1 class="text-heading text-4xl font-bold">
+            National <br />
+            Associations
+          </h1>
+          <p class="text-paragraph">
+            Our membership management software provides full automation of
+            membership renewals and payments.
+          </p>
+        </div>
+        <div class="space-y-3">
+          <div class="flex justify-center items-center">
+            <img
+              src="https://project-nexcent.vercel.app/Features/icon3.svg"
+              alt=""
+            />
+          </div>
+          <h1 class="text-heading text-4xl font-bold">
+            Clubs And Similar Groups
+          </h1>
+          <p class="text-paragraph">
+            Our membership management software provides full automation of
+            membership renewals and payments.
+          </p>
+        </div>
       </div>
     </section>
-    <!-- /Client section end -->
+    <!-- Our Clients section end -->
 
-    <!-- Services started -->
+    <!-- three Year section start -->
     <section>
       <div
-        class="container d-flex text-center my-5 flex-column flex-lg-row flex-md-row"
+        class="flex justify-around md:flex-row flex-col items-center md:items-center"
       >
-        <div class="container py-3" data-aos="fade-right">
-          <img src="/feature/icon1.svg" alt="" />
-          <article>
-            <h1 class="fs-1 lh-base fw-bold">Membership Organisations</h1>
-            <p class="text-secondary">
-              Our membership management software provides full automation of
-              membership renewals and payments.
-            </p>
-          </article>
+        <div class="flex justify-center items-center object-contain">
+          <img src="https://project-nexcent.vercel.app/pixelgrade.svg" alt="" />
         </div>
-        <div class="container py-3" data-aos="fade-up">
-          <img src="/feature/icon2.svg" alt="" />
-          <article>
-            <h1 class="fs-1 lh-base text-gray-900 fw-bold">
-              National <br />
-              Associations
+        <div class="max-w-xl flex items-center">
+          <article class="space-y-9">
+            <h1 class="text-4xl text-[#343a40] font-bold">
+              The unseen of spending three years at
+              <span class="text-btn">Pixelgrade</span>
             </h1>
-            <p class="text-secondary">
-              Our membership management software provides full automation of
-              membership renewals and payments.
+            <p class="text-paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+              amet justo ipsum. Sed accumsan quam vitae est varius fringilla.
+              Pellentesque placerat vestibulum lorem sed porta. Nullam mattis
+              tristique iaculis. Nullam pulvinar sit amet risus pretium auctor.
+              Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec
+              elementum pulvinar odio.
             </p>
+            <button
+              class="bg-btn px-4 py-2 rounded-md text-white font-medium hover:bg-green-600"
+            >
+              Learn More
+            </button>
           </article>
         </div>
-        <div class="container py-3" data-aos="fade-left">
-          <img
-            class="img-fluid img-thumbnail"
-            src="/feature/icon3.svg"
-            alt=""
-          />
-          <div class="container py-3">
-            <article>
-              <h1 class="fs-1 lh-base fw-bold">Clubs And Similar Groups</h1>
-              <p class="text-secondary">
-                Our membership management software provides full automation of
-                membership renewals and payments.
-              </p>
-            </article>
-          </div>
-        </div>
       </div>
     </section>
-    <!-- Services end -->
+    <!-- three Year section end -->
 
-    <!-- service-2 section start -->
-    <section
-      class="container d-flex flex-column flex-md-row justify-content-between align-items-center"
-    >
-      <img
-        data-aos="fade-right"
-        class=""
-        src="/pixelgrande/pixelgrade.svg"
-        alt=""
-      />
-      <div class="pt-3 sub-section" data-aos="fade-left">
-        <article>
-          <h1 class="fw-bold lh-base text-left">
-            The unseen of spending three years at
-            <span class="text-success">Pixelgrade</span>
-          </h1>
-          <p class="fs-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
-            amet justo ipsum. Sed accumsan quam vitae est varius fringilla.
-            Pellentesque placerat vestibulum lorem sed porta. Nullam mattis
-            tristique iaculis. Nullam pulvinar sit amet risus pretium auctor.
-            Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec
-            elementum pulvinar odio.
-          </p>
-          <button class="btn btn-success text-white mt-4 btn-lg">
-            Learn More
-          </button>
-        </article>
-      </div>
-    </section>
-    <!-- service-2 section end -->
-
-    <!-- service-3 section start -->
-    <section class="bg-body-tertiary">
+    <!--Helping  section start -->
+    <section class="container-2xl bg-slate-100">
       <div
-        class="container flex-md-row flex-lg-row flex-column d-flex justify-content-between align-items-center py-5 my-5 px-2"
+        class="container flex justify-evenly py-6 my-10 md:flex-row flex-col"
       >
-        <div data-aos="fade-right" class="align-items-center">
-          <article class="">
-            <h1>
+        <div class="container flex md:items-center items-center">
+          <article class="space-y-5">
+            <h1 class="text-4xl text-heading font-bold antialiased">
               Helping a local <br />
-              <span class="text-success">business reinvent itself</span>
+              <span class="text-btn">business reinvent itself</span>
             </h1>
-            <p class="text-secondary">
+            <p class="text-paragraph">
               We reached here with our hardwork and dedication.
             </p>
           </article>
         </div>
-        <div class="sub-section row row-cols-md-2 row-cols-1 gap-md-0 gap-3">
-          <div class="d-flex gap-2" data-aos="zoom-in">
-            <img src="/stats/icon1.svg" alt="" />
-            <article>
-              <h1 class="fw-bold text-secondary">2,245,341</h1>
-              <p class="text-secondary">Members</p>
-            </article>
-          </div>
-          <div class="d-flex" data-aos="zoom-in">
-            <img
-              class="pb-0"
-              style="height: 48px; width: 48px"
-              src="/stats/icon2.svg"
-              alt=""
-            />
-            <article>
-              <h1 class="fw-bold text-secondary">46,328</h1>
-              <p class="text-secondary">Clubs</p>
-            </article>
-          </div>
-          <div class="d-flex" data-aos="zoom-in">
-            <img src="/stats/icon3.svg" alt="" />
-            <article>
-              <h1 class="fw-bold text-secondary">828,267</h1>
-              <p class="text-secondary">Event Bookings</p>
-            </article>
-          </div>
-          <div class="d-flex" data-aos="zoom-in">
-            <img src="/stats/icon4.svg" alt="" />
-            <article>
-              <h1 class="fw-bold text-secondary">1,926,436</h1>
-              <p class="text-secondary">Payments</p>
-            </article>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="row flex md:flex-row flex-col py-4 md:py-6">
+                <div class="col-lg-6 flex space-x-3 px-5">
+                  <img
+                    src="https://project-nexcent.vercel.app/Stats/icon1.svg"
+                    alt=""
+                  />
+                  <div>
+                    <h1 class="text-3xl font-bold text-heading py-3">
+                      2,245,341
+                    </h1>
+                    <p>Members</p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="col-lg-6 flex space-x-3 px-5">
+                    <img
+                      class="flex items-end mt-6"
+                      style="height: 55px; width: 55px"
+                      src="https://project-nexcent.vercel.app/Stats/icon2.svg"
+                      alt=""
+                    />
+                    <div>
+                      <h1 class="text-3xl font-bold text-heading py-3">
+                        46,328
+                      </h1>
+                      <p>Clubs</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row flex md:flex-row flex-col py-4 md:py-6">
+                <div class="col-lg-6 flex space-x-5 px-5">
+                  <img
+                    src="https://project-nexcent.vercel.app/Stats/icon3.svg"
+                    alt=""
+                  />
+                  <div>
+                    <h1 class="text-3xl font-bold text-heading py-3">
+                      828,267
+                    </h1>
+                    <p>Event Bookings</p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="col-lg-6 flex space-x-3 px-5">
+                    <img
+                      src="https://project-nexcent.vercel.app/Stats/icon4.svg"
+                      alt=""
+                    />
+                    <div>
+                      <h1 class="text-3xl font-bold text-heading py-3">
+                        1,926,436
+                      </h1>
+                      <p>Payments</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- service-3 section end -->
+    <!--Helping  section end -->
 
-    <!-- service - 4 section start -->
+    <!-- Your Design OF footer section start -->
     <section>
-      <div
-        class="container d-flex flex-lg-row flex-column justify-content-lg-between justify-content-center align-items-center px-sm-2 my-5 bg-white"
-      >
-        <img
-          data-aos="fade-right"
-          class="h-auto w-auto d-flex align-items-center img-fluid img-thumbnail my-3"
-          src="/useimg/useImg.svg"
-          alt=""
-        />
-
-        <div class="sub-section" data-aos="fade-left">
-          <article>
-            <h1 class="fw-bold lh-base text-left">
+      <div class="flex justify-around my-12 md:flex-row flex-col">
+        <div
+          class="flex justify-center items-center object-contain md:py-0 py-10"
+        >
+          <img src="https://project-nexcent.vercel.app/useImg.svg" alt="" />
+        </div>
+        <div class="max-w-xl flex md:items-center">
+          <article class="space-y-9">
+            <h1 class="text-4xl text-[#343a40] font-bold">
               How to design your site footer like
-              <span class="text-success">we did ?</span>
+              <span class="text-btn">we did ?</span>
             </h1>
-            <p class="fs-6">
+            <p class="text-paragraph">
               Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor,
               augue nec tincidunt molestie, massa nunc varius arcu, at
               scelerisque elit erat a magna. Donec quis erat at libero ultrices
@@ -299,29 +325,32 @@
               et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus
               ipsum id gravida.
             </p>
-            <button class="btn btn-success text-white mt-4 btn-lg">
+            <button
+              class="bg-btn px-4 py-2 rounded-md text-white font-medium hover:bg-green-600"
+            >
               Learn More
             </button>
           </article>
         </div>
       </div>
     </section>
-    <!-- service - 4 section End -->
+    <!-- Your Design OF footer section end -->
 
-    <!-- service-5 start -->
-    <section class="bg-body-tertiary">
+    <!-- Tim smith section start -->
+    <section class="my-20 bg-slate-100">
       <div
-        class="custom-class container flex-column flex-md-row flex-lg-row d-flex my-5 py-5 justify-content-center align-item-center"
+        class="container flex md:flex-row flex-col justify-between items-center gap-3"
       >
-        <img
-          data-aos="fade-right"
-          src="/feedback/feedback.svg"
-          class="img-fluid img-thumbnail"
-          alt=""
-        />
-        <div class="ps-3" data-aos="fade-left">
-          <article class="pt-4">
-            <p>
+        <div class="container sm:w-2/4">
+          <img
+            class="object-fill"
+            src="https://project-nexcent.vercel.app/feedback.svg"
+            alt=""
+          />
+        </div>
+        <div class="container my-0">
+          <article class="space-y-4">
+            <p class="text-paragraph">
               Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
               lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu
               enim metus. Vivamus sed libero ornare, tristique quam in, gravida
@@ -334,221 +363,223 @@
               condimentum id. Curabitur id nibh id sem dignissim finibus ac sit
               amet magna.
             </p>
-            <h5 class="text-success">Tim Smith</h5>
-            <p>British Dragon Boat Racing Association</p>
+            <div>
+              <h3 class="text-btn font-bold">Tim Smith</h3>
+              <p class="text-paragraph">
+                British Dragon Boat Racing Association
+              </p>
+            </div>
+            <div
+              class="flex justify-between items-center sm:flex-row flex-wrap"
+            >
+              <img
+                src="https://project-nexcent.vercel.app/Clients/client1.svg"
+                alt=""
+              />
+              <img
+                src="https://project-nexcent.vercel.app/Clients/client2.svg"
+                alt=""
+              />
+              <img
+                src="https://project-nexcent.vercel.app/Clients/client3.svg"
+                alt=""
+              />
+              <img
+                src="https://project-nexcent.vercel.app/Clients/client4.svg"
+                alt=""
+              />
+              <img
+                src="https://project-nexcent.vercel.app/Clients/client5.svg"
+                alt=""
+              />
+              <img
+                src="https://project-nexcent.vercel.app/Clients/client6.svg"
+                alt=""
+              />
+              <img
+                src="https://project-nexcent.vercel.app/Clients/client7.svg"
+                alt=""
+              />
+              <div class="text-btn font-bold">Meet All Customers -></div>
+            </div>
           </article>
+        </div>
+      </div>
+    </section>
+    <!-- Tim smith section end -->
+
+    <!-- Marketing section start -->
+    <section class="my-12 py-12">
+      <div class="mx-auto">
+        <article class="text-center space-y-4">
+          <h1 class="text-paragraph font-bold text-4xl">
+            Caring is the new marketing
+          </h1>
+          <p class="text-paragraph">
+            The Nexcent blog is the best place to read about the latest
+            membership insights, trends and more.<br />
+            See who‘s joining the community, read about how our community are
+            <br />
+            increasing their membership income and lot‘s more.
+          </p>
+        </article>
+      </div>
+      <div
+        class="flex justify-evenly items-center md:flex-row flex-col gap-40 md:gap-5 py-20"
+      >
+        <div class="relative">
+          <img
+            class=""
+            src="https://project-nexcent.vercel.app/Readmore/how.svg"
+            alt=""
+          />
           <div
-            class="d-flex justify-content-between flex-column flex-sm-row align-items-lg-center align-items-start"
+            class="bg-white absolute info text-paragraph rounded-md py-3 px-1 space-y-4 drop-shadow-xl"
           >
-            <img
-              width="48"
-              height="48"
-              class="img-fluid"
-              src="/clients/client1.svg"
-              alt=""
-            />
-            <img
-              width="48"
-              height="48"
-              class="img-fluid"
-              src="/clients/client2.svg"
-              alt=""
-            />
-            <img
-              width="48"
-              height="48"
-              class="img-fluid"
-              src="/clients/client3.svg"
-              alt=""
-            />
-            <img
-              width="48"
-              height="48"
-              class="img-fluid"
-              src="/clients/client4.svg"
-              alt=""
-            />
-            <img
-              width="48"
-              height="48"
-              class="img-fluid"
-              src="/clients/client5.svg"
-              alt=""
-            />
-            <img
-              width="48"
-              height="48"
-              class="img-fluid"
-              src="/clients/client6.svg"
-              alt=""
-            />
-            <img width="48" height="48" src="/clients/client7.svg" alt="" />
-            <h6 class="fw-bold text-success fs-4">Meet All Customers -></h6>
+            <p class="text-2xl">
+              Creating Streamlined Safeguarding Processes with OneRen.
+            </p>
+            <div>
+              <a href="" class="text-btn">Read More -></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <img
+            class=""
+            src="https://project-nexcent.vercel.app/Readmore/manage.svg"
+            alt=""
+          />
+          <div
+            class="bg-white absolute info text-paragraph rounded-md py-3 px-1 space-y-4 drop-shadow-xl"
+          >
+            <p class="text-2xl">
+              What are your responsibilities and how can you manage them?
+            </p>
+            <div>
+              <a href="" class="text-btn">Read More -></a>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <img
+            class=""
+            src="https://project-nexcent.vercel.app/Readmore/revamp.svg"
+            alt=""
+          />
+          <div
+            class="bg-white absolute info text-paragraph rounded-md py-3 px-1 space-y-4 drop-shadow-xl"
+          >
+            <p class="text-2xl">
+              Revamping the Membership Model with Triathlon Australia.
+            </p>
+            <div>
+              <a href="" class="text-btn">Read More -></a>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- service-5 end -->
+    <!-- Marketing section end -->
 
-    <!-- service-6 start -->
+    <!-- Extra section start -->
     <section>
-      <div class="container py-5 my-5">
-        <div class="container py-3">
-          <article class="text-center" data-aos="zoom-in-up">
-            <h1>Caring is the new marketing</h1>
-            <p>
-              The Nexcent blog is the best place to read about the latest
-              membership insights, trends and more.<br />
-              See who&rsquo;s joining the community, read about how our
-              community are
-              <br />increasing their membership income and lot&rsquo;s more.
-            </p>
-          </article>
+      <div class="bg-slate-100 my-12 py-12">
+        <article class="text-center space-y-5">
+          <h1 class="font-bold text-4xl text-[#343a40]">
+            Pellentesque suscipit <br />
+            fringilla libero eu.
+          </h1>
+          <button
+            class="px-4 py-2 text-lg bg-btn text-white hover:bg-[#67bb69] rounded-md"
+          >
+            Get Demo ->
+          </button>
+        </article>
+      </div>
+    </section>
+    <!-- Extra section end -->
+
+    <!-- Footer section start -->
+    <section class="bg-slate-900">
+      <div class="container flex py-10 my-10 md:flex-row flex-col">
+        <div class="container flex items-center">
+          <div class="text-white space-y-8">
+            <div class="flex">
+              <img
+                src="https://project-nexcent.vercel.app/logo_icon.svg"
+                alt=""
+              />
+              <h2 class="text-white font-bold text-3xl">Nexcent</h2>
+            </div>
+            <div>
+              <p>Copyright © 2020 Nexcent ltd.</p>
+              <p>All rights reserved</p>
+            </div>
+            <div>
+              <a
+                class="bg-white text-black py-1 px-2 rounded-md text-2xl"
+                href=""
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                class="bg-white text-black py-1 px-2 rounded-md text-2xl"
+                href=""
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                class="bg-white text-black py-1 px-2 rounded-md text-2xl"
+                href=""
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                class="bg-white text-black py-1 px-2 rounded-md text-2xl"
+                href=""
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+          </div>
         </div>
         <div
-          class="container d-flex flex-column flex-md-row flex-lg-row justify-content-between align-items-center my-sm-5"
+          class="container flex justify-between md:flex-row flex-col md:py-0 py-10"
         >
-          <div
-            class="position-relative px-3 pt-5 mb-sm-5"
-            data-aos="fade-right"
-          >
-            <img
-              class="img-fluid img-thumbnail"
-              src="/readmore/how.svg"
-              alt=""
-            />
-            <div
-              class="position-absolute h-75 w-75 top-50 mb-sm-5 mt-5 start-50 translate-middle-x bg-white border border-1 text-center rounded-3 shadow-lg mb-5 bg-body-tertiary rounded"
-            >
-              <h1 class="fs-4 my-3 pb-4 px-3">
-                Creating Streamlined Safeguarding Processes with OneRen.
-              </h1>
-              <a
-                href="#"
-                class="link-primary link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover pt-5 px-3 py-3 text-success fw-bold"
-                >Read More -></a
-              >
-            </div>
-          </div>
-          <div
-            class="position-relative h-auto w-auto px-3 pt-5 mb-sm-5"
-            data-aos="fade-down"
-          >
-            <img
-              class="img-fluid img-thumbnail"
-              src="/readmore/manage.svg"
-              alt=""
-            />
-            <div
-              class="position-absolute h-75 w-75 top-50 mt-5 start-50 translate-middle-x bg-white border border-1 text-center rounded-3 shadow-lg mb-5 bg-body-tertiary rounded"
-            >
-              <h1 class="fs-3 my-3 pb-3 px-3">
-                What are your responsibilities and how can you manage them?
-              </h1>
-              <a
-                href="#"
-                class="link-primary link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover mt-3 px-3 py-3 text-success fw-bold"
-                >Read More -></a
-              >
-            </div>
-          </div>
-          <div
-            class="position-relative h-auto w-auto px-3 pt-5 mb-sm-5"
-            data-aos="fade-left"
-          >
-            <img
-              class="img-fluid img-thumbnail"
-              src="/readmore/revamp.svg"
-              alt=""
-            />
-            <div
-              class="position-absolute h-75 w-75 top-50 mt-5 px-3 start-50 translate-middle-x bg-white border border-1 text-center rounded-3 shadow-lg mb-5 bg-body-tertiary rounded"
-            >
-              <h1 class="fs-3 my-2 px-3">
-                Revamping the Membership Model with Triathlon Australia.
-              </h1>
-              <a
-                href="#"
-                class="link-primary link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover mt-3 px-3 py-3 text-success fw-bold"
-                >Read More -></a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- service-6 end -->
-
-    <!-- servive-7 start -->
-    <section class="bg-body-tertiary py-4">
-      <div class="container-fluid text-center my-5 py-5" data-aos="zoom-in">
-        <h1 class="fw-bold">
-          Pellentesque suscipit <br />
-          fringilla libero eu.
-        </h1>
-        <button class="btn btn-success my-5 fs-4 rounded-2">Get Demo -></button>
-      </div>
-    </section>
-    <!-- servive-7 end -->
-
-    <!-- footer start -->
-    <footer>
-      <div
-        class="container-fluid bg-dark d-flex flex-column flex-md-row flex-lg-row"
-      >
-        <div class="container w-md-50 px-5 py-5" data-aos="fade-up">
-          <div class="">
-            <h5 class="fw-bold text-white fs-2">
-              <img src="/logo_icon/logo_icon.svg" alt="" />Nexcent
-            </h5>
-          </div>
-          <article class="text-white py-2">
-            <p>Copyright © 2024 Nexcent ltd.</p>
-            <p>All rights reserved</p>
-          </article>
-
-          <div class="container py-3 px-0">
-            <i class="fa-brands rounded-5 bg-white fa-instagram px-3 fa-2x"></i>
-            <i class="fa-brands rounded-5 bg-white fa-facebook px-3 fa-2x"></i>
-            <i class="fa-brands rounded-5 bg-white fa-twitter px-3 fa-2x"></i>
-            <i class="fa-brands rounded-5 bg-white fa-youtube px-3 fa-2x"></i>
-          </div>
-        </div>
-        <div class="container w-md-50 px-5 py-4">
-          <div
-            class="d-flex text-white flex-column flex-lg-row flex-md-row"
-            data-aos="fade-up"
-          >
-            <div class="container py-4">
-              <h2>Company</h2>
+          <div class="text-white md:py-0 py-5">
+            <h2 class="font-bold text-xl pb-5">Company</h2>
+            <div class="text-white">
               <p>About Us</p>
               <p>Blog</p>
               <p>Contact Us</p>
               <p>Pricing</p>
-              <p>Testimonials</p>
+              <p>Testimonial</p>
             </div>
-            <div class="container py-4">
-              <h2>Support</h2>
-              <p>Help Center</p>
+          </div>
+          <div class="text-white md:py-0 py-5">
+            <h2 class="font-bold text-xl pb-5">Support</h2>
+            <div class="text-white">
+              <p>Help center</p>
               <p>Terms of service</p>
               <p>Legal</p>
               <p>Privacy policy</p>
               <p>Status</p>
             </div>
-            <div class="container py-4">
-              <h5 class="text-secondary">Stay up to date</h5>
+          </div>
+          <div class="space-y-4 md:py-0 py-5">
+            <h3 class="text-paragraph text-xl">Stay up to date</h3>
+            <div>
               <input
-                class="rounded-2"
-                type="email"
-                placeholder="Your email address"
+                class="bg-paragraph rounded-md px-1 py-2"
+                type="text"
+                placeholder="Your Email Address"
               />
             </div>
+            <button class="text-black bg-white px-1 py-1 rounded-md text-lg">
+              click here
+            </button>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- footer end -->
-    
-    <script type="module" src="./js/index.js"></script>
+    </section>
+    <!-- Footer section end -->
   </body>
 </html>
