@@ -1,12 +1,35 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+html,
+body {
+  width: 100%;
+}
 
-.info {
-  height: 200px;
-  width: 250px;
-  /* border: 1px solid black; */
-  text-align: center;
-  top: 70%;
-  left: 16%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: 576px) {
+  html,
+  body {
+    overflow-x: none;
+  }
+}
+@media (max-width: 576px) {
+  html,
+  body {
+    /* width: 100%; */
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  .sub-section {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .sub-section {
+    width: 50%;
+  }
 }
